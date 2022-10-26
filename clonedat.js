@@ -1,6 +1,6 @@
 addEventListener('DOMContentLoaded', (event) => {
 	document.querySelectorAll('[data-clone]').forEach(el => {
-		fetch('https://clonedat.com/rest/info/'+el.getAttribute('data-clonedat'))
+		fetch('https://clonedat.com/rest/info/'+el.getAttribute('data-clone'))
 			.then(r => r.json())
 			.then(d => {
 				if (d.error) {
