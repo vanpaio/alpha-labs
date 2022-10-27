@@ -19,7 +19,7 @@ addEventListener('DOMContentLoaded', (event) => {
 						el.querySelector('iframe').setAttribute('style', d.iframe_style);
 						if (d.brand && !el.querySelector('div')) {
 							const div = document.createElement('div');
-							div.innerHTML = 'powered by <a href="https://clonedat.com" style="font-weight: bold">Clonedat.com</a>';
+							div.innerHTML = 'powered by <a href="'+d.curl+'" style="font-weight: bold">Clonedat.com</a>';
 							div.style.position = 'absolute';
 							div.style.right = '0';
 							div.style.bottom = '0';
